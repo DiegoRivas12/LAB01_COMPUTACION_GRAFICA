@@ -32,3 +32,10 @@ Para ejecutar este proyecto, necesitarás los siguientes requisitos previos:
    
 4. **Verificación de los valores de los canales**:
    - Se verifica que los valores de cada píxel en los canales estén dentro del rango **0-255** (el rango esperado para imágenes de 8 bits por canal).
+
+## Explicación de lo que se añadió:
+1. **Imagen de ejemplo**: La línea de código:
+   ```markdown
+   ![Funcionamiento]( https://github.com/DiegoRivas12/LAB01_COMPUTACION_GRAFICA.git/funcionamiento.png)
+  
+
