@@ -1,0 +1,14 @@
+mkdir build
+cmake -B .\build\
+
+#BUILD IN DEBUG
+cmake --build .\build\
+.\build\Debug\OpenCVExample.exe
+
+#BUILD IN RELEASE
+cmake --build .\build\ --config Release
+.\build\Release\OpenCVExample.exe
+
+#MODIFY PROGRAM AND REBUILD
+cmake --build .\build\
+.\build\Debug\OpenCVExample.exe

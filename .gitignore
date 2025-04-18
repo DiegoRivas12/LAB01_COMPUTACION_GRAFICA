@@ -30,3 +30,18 @@
 *.exe
 *.out
 *.app
+
+# CMake files
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+*.cmake
+CTestTestfile.cmake
+
+# OpenCV Build files (si compilaste OpenCV desde el código fuente)
+opencv_contrib/
+opencv/
+build/
+
+# Archivos JSON
+*.json
