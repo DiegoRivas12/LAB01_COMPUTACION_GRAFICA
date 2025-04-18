@@ -19,6 +19,44 @@ Para ejecutar este proyecto, necesitarás los siguientes requisitos previos:
    - **CMake**: Para generar los archivos de construcción de OpenCV.
    - **OpenCV**: Para manipular las imágenes y extraer los canales.
 
+## Configuración de Visual Studio Code (c_cpp_properties.json)
+
+Para configurar correctamente **OpenCV** en **Visual Studio Code** con **MinGW** en tu sistema, es necesario modificar el archivo **`c_cpp_properties.json`**. Este archivo configura las rutas de inclusión, el compilador y otras opciones relacionadas con la compilación.
+
+### Pasos para configurar el archivo `c_cpp_properties.json`:
+
+1. Abre tu proyecto en **Visual Studio Code**.
+2. Dirígete a la carpeta `.vscode` en tu proyecto (si no existe, crea una).
+3. Dentro de esa carpeta, crea o edita el archivo **`c_cpp_properties.json`**.
+4. Asegúrate de que las rutas de **OpenCV** en el archivo **`c_cpp_properties.json`** apunten a la ubicación correcta de tu instalación de **OpenCV**.
+
+El archivo **`c_cpp_properties.json`** debe tener una configuración similar a esta:
+
+```json
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "C:/opt/opencv/build/include",        // Cambia esta ruta según la ubicación de OpenCV en tu sistema
+                "C:/opt/opencv/build/include/opencv2"  // Cambia esta ruta según la ubicación de OpenCV en tu sistema
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            "windowsSdkVersion": "10.0.22621.0",
+            "cStandard": "c17",
+            "cppStandard": "c++17",
+            "compilerPath": "C:/MinGW/bin/gcc.exe"
+        }
+    ],
+    "version": 4
+}
+```
+
 ## Funcionalidad
 
 1. **Leer una imagen en formato RGB**:
