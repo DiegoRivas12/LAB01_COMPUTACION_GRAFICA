@@ -33,6 +33,30 @@ Para ejecutar este proyecto, necesitarás los siguientes requisitos previos:
 4. **Verificación de los valores de los canales**:
    - Se verifica que los valores de cada píxel en los canales estén dentro del rango **0-255** (el rango esperado para imágenes de 8 bits por canal).
 
+## Ejecución
+
+### Pasos para compilar y ejecutar:
+
+1. **Crear el directorio de construcción y configurar con CMake:**
+
+   ```bash
+   mkdir build
+   cmake -B .\build\
+2. **#BUILD IN DEBUG**
+   ```bash
+   cmake --build .\build\
+   .\build\Debug\OpenCVExample.exe
+
+3. **#BUILD IN RELEASE**
+   ```bash
+   cmake --build .\build\ --config Release
+   .\build\Release\OpenCVExample.exe
+4. **#MODIFY PROGRAM AND REBUILD**
+   ```bash
+   cmake --build .\build\
+   .\build\Debug\OpenCVExample.exe
+
+
 ## Ejemplo de ejecución:
 1. **Imagen de ejemplo**: La línea de código:
    
