@@ -35,7 +35,7 @@ Para ejecutar este proyecto, necesitarás los siguientes requisitos previos:
 
 ## Explicación de lo que se añadió:
 1. **Imagen de ejemplo**: La línea de código:
-   ```markdown
-   ![Funcionamiento]( https://github.com/DiegoRivas12/LAB01_COMPUTACION_GRAFICA.git/funcionamiento.png)
+   
+   ![Funcionamiento](https://github.com/DiegoRivas12/LAB01_COMPUTACION_GRAFICA/raw/main/funcionamiento.png)
   
 
